@@ -39,7 +39,12 @@ body{
     font-size: 18px;
     margin: 1rem 0;
     cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+
 
 div{
     display: flex;
