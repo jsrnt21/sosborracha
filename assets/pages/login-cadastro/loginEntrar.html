@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S Borracha</title>
+    <link rel="stylesheet" href="../../estilos/login-cadastroCss/loginEntrar.css">
+</head>
+
+<body>
+    <main class="principal">
+        <img src="../../img/imagens-principal/sosborracha.JPG" alt="Logo S.O.S Borracha" class="logo" />
+
+        <h1 class="principal__titulo">Entrar na sua conta</h1>
+
+        <form class="form-login" action="#">
+            <div class="campo-icone">
+                <img src="../../img/icones/icon-email.png" alt="ícone de email" class="icone-campo" />
+                <input type="email" placeholder="Email" required class="campo-senha" />
+            </div>
+
+            <div class="campo-icone">
+                <img src="../../img/icones/icon-senha.png" alt="ícone de senha" class="icone-campo" />
+                <input type="password" id="senha" placeholder="Senha" required class="campo-senha" />
+                <img src="../../img/icones/icon-senhaoff.png" alt="mostrar senha" class="icone-senha"
+                    onclick="mostrarSenha()" />
+            </div>
+
+            <label class="lembrar-me">
+                <input type="checkbox" />
+                Lembrar-me
+            </label>
+
+            <button type="submit" class="principal__entrar-senha">Entrar</button>
+
+            <a href="#" class="esqueceu-senha">Esqueceu a senha</a>
+        </form>
+    </main>
+
+    <script>
+        function mostrarSenha() {
+            const senha = document.getElementById('senha');
+            senha.type = senha.type === 'password' ? 'text' : 'password';
+        }
+    </script>
+
+</body>
+
+</html>
+

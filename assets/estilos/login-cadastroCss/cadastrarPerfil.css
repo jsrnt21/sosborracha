@@ -1,0 +1,85 @@
+:root {
+  --cor-fundo: #222229;
+  --cor-branco: #ffffff;
+  --cor-verde: #1A9A22;
+  --cor-cinza-claro: #424242;
+  --cor-preto-opaco: rgb(0, 0, 0, 30%);
+  --font: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 1rem;
+}
+
+.principal {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titulo {
+  color: var(--cor-branco);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.foto-perfil-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.foto-perfil {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.icone-editar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background-color: var(--cor-fundo);
+  border-radius: 50%;
+  
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 33px;
+  border: none;
+  background-color: var(--cor-preto-opaco);
+  color: var(--cor-branco);
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  border: none;
+  padding: 1rem;
+  border-radius: 33px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}

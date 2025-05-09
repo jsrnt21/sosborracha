@@ -1,0 +1,64 @@
+:root{
+    --cor-fundo: #222229;
+    --cor-branco: #ffffff;
+    --cor-verde: #1A9A22;
+    --cor-cinza-claro: #424242;
+    --cor-preto-opaco: rgb(0, 0, 0, 30%);
+
+    --font: Arial, sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 2rem;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 250px;
+    margin-bottom: 2.5rem;
+}
+
+.principal__titulo {
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.codigo {
+    width: 100%;
+    max-width: 250px;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid var(--cor-branco);
+    background-color: transparent;
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 10px;
+    margin-bottom: 2rem;
+}
+
+.principal__entrar-senha {
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    padding: 1rem 1.5rem;
+    border-radius: 33px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+}
