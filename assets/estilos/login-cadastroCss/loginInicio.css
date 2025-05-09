@@ -1,0 +1,79 @@
+:root{
+    --cor-fundo: #222229;
+    --cor-branco: #ffffff;
+    --cor-verde: #1A9A22;
+    --cor-cinza-claro: #424242;
+    --cor-preto-opaco: rgb(0, 0, 0, 30%);
+
+    --font: Arial, sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--font);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0 2rem;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal__titulo{
+    color: var(--cor-branco);
+    text-align: center;
+}
+
+.principal__google{
+    background-color: var(--cor-preto-opaco);
+    border: none;
+    color: var(--cor-branco);
+    padding: 1rem 1.5rem;
+    border-radius: 33px;
+    font-size: 18px;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+
+div{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+span{
+    width: 200px;
+    height: 2px;
+    background-color: var(--cor-cinza-claro);
+}
+
+p {
+    color: var(--cor-branco);
+}
+
+.principal__entrar-senha{
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    padding: 1rem 1.5rem;
+    border-radius: 33px;
+    text-decoration: none;
+    font-size: 18px;
+    border: none;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+
+p a{
+    text-decoration: none;
+    color: var(--cor-verde);
+}
+
+p a:hover{
+    font-weight: bold;
+}
