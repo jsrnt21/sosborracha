@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.O.S Borracha</title>
     <link rel="stylesheet" href="../../estilos/login-cadastroCss/criarConta.css">
 </head>
+
 <body>
     <main class="principal">
-        <img src="../../img/imagens-principal/logo.png" alt="Logo do S.O.S Borracha com escrita S.O.S Borracha">
+        <img src="../../img/imagens-principal/logo.png" alt="Logo do S.O.S Borracha com escrita S.O.S Borracha"
+            class="logo-sos">
         <h1 class="principal__titulo">Crie sua conta</h1>
-        
+
         <form action="#">
             <input type="text" name="empresa" id="empresa" placeholder="Nome da Empresa:">
 
@@ -22,16 +25,23 @@
 
             <input type="password" name="confirme-senha" id="confirme-senha" placeholder="Confirme senha:">
 
-            <a href="" target="_self">Aceitar termos de uso</a>
+            <div class="termos">
+                <input type="checkbox" id="termos" required>
+                <label for="termos">Aceito os <a href="termosdeUso.html" target="_blank">termos de uso</a></label>
+            </div>
 
             <button>Cadastre-se</button>
         </form>
 
-        <div class="principal__linha"><span></span><p>ou continue com</p><span></span></div>
+        <div class="principal__linha"><span></span>
+            <p>ou continue com</p><span></span>
+        </div>
 
-        <p>Icones</p>
+        <a href="https://encurtador.com.br/1I78a" target="_blank"><img src="../../img/icones/icon-google.png" alt="google"
+                class="icone-google"></a>
 
         <p>Já tem uma conta? <a href="" target="_self">Entre</a></p>
     </main>
 </body>
+
 </html>

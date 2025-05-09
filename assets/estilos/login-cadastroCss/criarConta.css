@@ -16,6 +16,7 @@ body{
     justify-content: center;
     min-height: 100vh;
     margin: 0 2rem;
+    
 }
 
 .principal{
@@ -25,28 +26,116 @@ body{
     justify-content: center;
 }
 
-.principal img{
+.logo-sos {
+    display: block;
+    max-width: 100%;
+    height: auto; 
     width: 250px;
 }
+
 
 .principal__titulo{
     color: var(--cor-branco);
     text-align: center;
     font-size: 1.5rem;
+    margin-top: 0.2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 450px;
+}
+
+form input {
+    background-color: var(--cor-preto-opaco);
+    color: var(--cor-branco);
+    border: none;
+    border-radius: 13px;
+    padding: 1rem 1.2rem 1rem 2.5rem;
+    font-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+}
+
+#empresa {
+    background-image: url('../../img/icones/icon-nome.png');
+}
+
+#email, #confirma-email {
+    background-image: url('../../img/icones/icon-email.png');
+}
+
+#senha, #confirme-senha {
+    background-image: url('../../img/icones/icon-senha.png');
+}
+
+.termos {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branco);
+    font-size: 0.9rem;
+    gap: 0.5rem;
+}
+
+.termos input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.termos a {
+    color: var(--cor-verde);
+    text-decoration: none;
+}
+
+.termos a:hover {
+    text-decoration: underline;
+}
+
+form button {
+    background-color: var(--cor-verde);
+    color: var(--cor-branco);
+    border: none;
+    padding: 1rem;
+    border-radius: 33px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.5rem;
 }
 
 .principal__linha{
     display: flex;
     align-items: center;
     gap: .5rem;
+    font-weight: bold;
 }
 
 .principal__linha span{
-    width: 200px;
+    width: 113px;
     height: 2px;
     background-color: var(--cor-cinza-claro);
 }
 
 p {
     color: var(--cor-branco);
+}
+
+.icone-google {
+    background-color: var(--cor-preto-opaco);
+    padding: .5rem;
+    border-radius: 40%;
+}
+
+p a {
+    color: var(--cor-verde);
+    text-decoration: none;
+    cursor: pointer;   
+}
+
+p a:hover {
+    font-weight: bold;
 }
