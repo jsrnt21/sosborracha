@@ -1,0 +1,11 @@
+.principal__parabens{
+    background-color: var(--cor-cinza-claro);
+    padding: 2rem;
+    border-radius: 33px;
+    color: var(--cor-branco);
+    text-align: center;
+    font-weight: bold;
+    z-index: 10;
+    position: absolute;
+    margin-top: 10rem;
+}
