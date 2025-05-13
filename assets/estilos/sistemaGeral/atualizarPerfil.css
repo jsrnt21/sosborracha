@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-fundo: #222229;
+  --cor-branco: #ffffff;
+  --cor-verde: #1A9A22;
+  --cor-cinza: #444;
+  --cor-preto-opaco: rgba(0, 0, 0, 0.3);
+  --font: Arial, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--font);
+  color: var(--cor-branco);
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 100px;
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.topo div {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.menu-opcoes {
+  font-size: 14px;
+}
+
+h3 {
+  margin: 4px 0;
+  font-size: 16px;
+  color: var(--cor-branco);
+}
+
+.estrela {
+  width: 16px;
+  vertical-align: middle;
+}
+
+.nota {
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.perfil {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid var(--cor-verde);
+  object-fit: cover;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input {
+  background-color: var(--cor-preto-opaco);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+  color: var(--cor-branco);
+}
+
+input::placeholder {
+  color: #bbb;
+}
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.redefinir {
+  color: var(--cor-verde);
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn-salvar {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.rodape {
+  background-color: var(--cor-preto-opaco);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.7rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.rodape img {
+  max-width: 28px;
+  max-height: 28px;
+  filter: brightness(1.2);
+}
