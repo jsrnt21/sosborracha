@@ -1,0 +1,144 @@
+:root {
+  --cor-fundo: #222229;
+  --cor-branco: #ffffff;
+  --cor-verde-opaco: #1a9a2383;
+  --cor-verde: #1a9a22;
+  --cor-cinza-claro: #424242;
+  --cor-preto-opaco: rgb(0, 0, 0, 30%);
+  --cor-preto: #000000;
+  --cor-cinza: #141414;
+  --cor-cinza-mais-claro: #d9d9d9;
+
+  --font: Arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--font);
+  min-height: 100vh;
+  color: var(--cor-branco);
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.cabecalho__perfil {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.foto-perfil {
+  width: 40px;
+}
+
+.perfil__inf {
+  font-size: 0.8rem;
+}
+
+.inf__icone {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background-color: var(--cor-cinza-claro);
+  padding: 0.3rem 0.5rem;
+  border-radius: 33px;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.cabecalho__botoes img {
+  cursor: pointer;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--cor-preto-opaco);
+  text-align: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.principal h1 {
+  color: var(--cor-verde);
+}
+
+.principal div {
+  padding: 0.2rem 1.5rem;
+  background-color: var(--cor-verde-opaco);
+  margin: 1rem 0;
+  border-radius: 33px;
+}
+
+.principal span{
+  display: block;
+}
+
+.principal p {
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.principal button {
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  padding: 0.6rem 1.3rem;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 33px;
+  cursor: pointer;
+}
+
+.rodape {
+  width: 100%;
+  background-color: var(--cor-cinza);
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+.rodape ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+@media screen and (width >= 750px) {
+  .cabecalho {
+    margin: 1rem 5rem;
+  }
+
+  .principal {
+    margin: 3rem auto;
+    width: 50%;
+    border-radius: 33px;
+  }
+
+  .foto-perfil {
+    width: 50px;
+  }
+
+  .perfil__inf {
+    font-size: 1rem;
+  }
+}

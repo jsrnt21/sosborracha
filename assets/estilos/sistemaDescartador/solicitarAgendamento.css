@@ -1,0 +1,152 @@
+:root{
+    --cor-fundo: #222229;
+    --cor-branco: #ffffff;
+    --cor-verde: #1A9A22;
+    --cor-cinza-claro: #424242;
+    --cor-preto-opaco: rgb(0, 0, 0, 30%);
+    --cor-preto: #000000;
+    --cor-cinza: #141414;
+    --cor-cinza-mais-claro: #D9D9D9;
+
+    --font: Arial, sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--font);
+    min-height: 100vh;
+    color: var(--cor-branco);
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.cabecalho__perfil{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.foto-perfil{
+    width: 40px;
+}
+
+.perfil__inf{
+    font-size: .8rem;
+}
+
+.inf__icone{
+    display: inline-flex;
+    align-items: center;
+    gap: .2rem;
+    background-color: var(--cor-cinza-claro);
+    padding: .3rem .5rem;
+    border-radius: 33px;
+    font-size: .7rem;
+    margin-top: .2rem;
+}
+
+.cabecalho__botoes img{
+    cursor: pointer;
+}
+
+
+.principal{
+    margin: 0 1rem;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.principal h1{
+    color: var(--cor-verde);
+}
+
+.principal__inf, .principal__form{
+    background-color: var(--cor-preto-opaco);
+    padding: 1rem 2rem; 
+    border-radius: 33px;
+}
+
+.principal h2{
+    font-size: 1.4rem;
+    border-bottom: 2px solid var(--cor-verde);
+    margin-bottom: 1rem;
+}
+
+.principal__inf p{
+    margin-bottom: .5rem;
+}
+
+.principal__form label{
+    color: var(--cor-verde);
+    font-weight: bold;
+}
+
+.principal__form input{
+    margin: .3rem 0 1.5rem 0;
+    border-radius: 33px;
+    height: 25px;
+    border: none;
+    padding: .5rem;
+    width: 200px;
+}
+
+.principal__form button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 33px;
+    padding: .2rem 1rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    border: none;
+}
+
+.rodape {
+    width: 100%;
+    background-color: var(--cor-cinza);
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.rodape ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+@media screen and (width >= 400px) {
+    .principal__form input{
+        width: 300px;
+    }
+}
+
+@media screen and (width >= 750px) {
+    .cabecalho, .principal{
+        margin: 1rem 5rem
+    }
+
+    .foto-perfil{
+        width: 50px;
+    }
+    
+    .perfil__inf{
+        font-size: 1rem;
+    }
+}
