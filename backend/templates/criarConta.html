@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S Borracha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/global/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/login-cadastro/criarConta.css') }}">
+</head>
+
+<body>
+    <main class="principal">
+        <img src="{{ url_for('static', filename='\img\imagens-principal\sosborracha.JPG') }}" alt="Logo do S.O.S Borracha com escrita S.O.S Borracha"
+            class="logo">
+        <h1 class="principal__titulo">Crie sua conta</h1>
+
+        <form action="{{ url_for('criarconta') }}" method="POST">
+            <input type="text" name="empresa" id="empresa" placeholder="Nome da Empresa:" required />
+
+            <input type="email" name="email" id="email" placeholder="Email:" required />
+
+            <input type="email" name="confirma-email" id="confirma-email" placeholder="Confirme email:" required />
+
+            <input type="password" name="senha" id="senha" placeholder="Senha:" required />
+
+            <input type="password" name="confirme-senha" id="confirme-senha" placeholder="Confirme senha:" required />
+
+            <div class="termos">
+                <input type="checkbox" id="termos" name="termos" required />
+                <label for="termos">Aceito os <a href="termosdeUso.html" target="_blank">termos de uso</a></label>
+            </div>
+
+            <button type="submit">Cadastre-se</button>
+        </form>
+
+        <div class="principal__linha"><span></span>
+            <p>ou continue com</p><span></span>
+        </div>
+
+        <a href="https://encurtador.com.br/1I78a" target="_blank"><img
+                src="{{ url_for('static', filename='img/icones/icon-google.png') }}" alt="google"
+                class="icone-google" /></a>
+
+        <p>Já tem uma conta? <a href="{{ url_for('criarconta') }}" target="_self">Entre</a></p>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/login-cadastro/criarConta.js') }}"></script>
+</body>
+
+</html>

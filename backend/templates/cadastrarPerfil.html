@@ -1,0 +1,31 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.O.S Borracha</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos/global/style.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos/login-cadastro/cadastrarPerfil.css') }}" />
+</head>
+<body>
+  <main class="principal">
+    <h1 class="titulo">Cadastre seu perfil</h1>
+
+    <div class="foto-perfil-container">
+      <img src="{{ url_for('static', filename='img/icones/icon-fotoperfil.png') }}" alt="Foto do perfil" class="foto-perfil" />
+      <img src="{{ url_for('static', filename='img/icones/icon-editfoto.png') }}" alt="Editar foto" class="icone-editar" />
+    </div>
+
+    <form action="/cadastro" method="post">
+        <input name="nome" placeholder="Nome" required><br>
+        <input name="celular" placeholder="Celular" required><br>
+        <input name="cnpj" placeholder="CNPJ" required><br>
+        <input name="cep" placeholder="CEP" required><br>
+        <input name="bairro" placeholder="Bairro" required><br>
+        <input name="rua_num" placeholder="Rua e Número" required><br>
+        <input name="complemento" placeholder="Complemento"><br>
+        <button type="submit">Confirmar</button>
+    </form>
+    
+  </main>
+</body>

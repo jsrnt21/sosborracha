@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>S.O.S Borracha</title>
+    <link rel="stylesheet" href="../../estilos/global/style.css">
     <link
       rel="stylesheet"
       href="../../estilos/sistemaColetor/adicionarItem.css"
@@ -43,17 +44,20 @@
         <h2 class="estoque__titulo">Controle do Estoque</h2>
 
         <div class="formulario">
+          
+          <form action="#">
             <h3>Adicionar Itens</h3>
-          <input type="text" placeholder="Nome do produto" />
-          <input type="number" placeholder="Quantidade de produtos" />
-          <input type="text" placeholder="Preço do produto por unidade" />
-          <select>
-            <option>Seção</option>
-            <option>Oficina</option>
-            <option>Loja</option>
-            <option>Estoque</option>
-          </select>
-          <button class="botao-adicionar">Adicionar</button>
+            <input type="text" id="input-nome" placeholder="Nome do produto" />
+            <input type="number" id="input-quantidade"  placeholder="Quantidade de produtos" />
+            <input type="text" id="input-preco"  placeholder="Preço do produto por unidade" />
+            <select>
+              <option>Seção</option>
+              <option>Oficina</option>
+              <option>Loja</option>
+              <option>Estoque</option>
+            </select>
+            <button class="botao-adicionar">Adicionar</button>
+          </form>
         </div>
 
         <div class="lista-produtos">
@@ -79,50 +83,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Pneu</td>
-                    <td>12</td>
-                    <td>R$150,00</td>
-                    <td>R$1800,00</td>
-                    <td>Oficina</td>
-                    <td>
-                      <img src="../../img/icones/icon-botao-editar.png" alt="Editar" />
-                      <img src="../../img/icones/icon-lixeira-de-reciclagem.png" alt="Excluir" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Chinelo</td>
-                    <td>24</td>
-                    <td>R$12,50</td>
-                    <td>R$300,00</td>
-                    <td>Oficina</td>
-                    <td>
-                      <img src="../../img/icones/icon-botao-editar.png" alt="Editar" />
-                      <img src="../../img/icones/icon-lixeira-de-reciclagem.png" alt="Excluir" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Luva de Borracha</td>
-                    <td>12</td>
-                    <td>R$12,00</td>
-                    <td>R$144,00</td>
-                    <td>Loja</td>
-                    <td>
-                      <img src="../../img/icones/icon-botao-editar.png" alt="Editar" />
-                      <img src="../../img/icones/icon-lixeira-de-reciclagem.png" alt="Excluir" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Borracha escolar</td>
-                    <td>10</td>
-                    <td>R$15,00</td>
-                    <td>R$150,00</td>
-                    <td>Estoque</td>
-                    <td>
-                      <img src="../../img/icones/icon-botao-editar.png" alt="Editar" />
-                      <img src="../../img/icones/icon-lixeira-de-reciclagem.png" alt="Excluir" />
-                    </td>
-                  </tr>
+                  
                 </tbody>
               </table>
           </div>
@@ -151,5 +112,7 @@
         </ul>
       </nav>
     </footer>
+
+    <script src="../../js/sistema-coletor/adicionarItem.js"></script>
   </body>
 </html>

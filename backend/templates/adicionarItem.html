@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S Borracha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos/global/style.css') }}">
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='estilos/sistemaColetor/adicionarItem.css') }}"
+    />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho__perfil">
+        <img
+          src="{{ url_for('static', filename='img/icones/icon-fotoperfil.png') }}"
+          alt="Ícone de Foto de Perfil"
+          class="foto-perfil"
+        />
+        <div class="perfil__inf">
+          <p>Conferindo o estoque?</p>
+          <p><strong>Borracharia Express</strong></p>
+          <p class="inf__icone">
+            <img
+              src="{{ url_for('static', filename='img/icones/icon-estrela.png') }}"
+              alt="Ícone de Estrela"
+            />4.33
+          </p>
+        </div>
+      </div>
+
+      <div class="cabecalho__botoes">
+        <img
+          src="{{ url_for('static', filename='img/icones/icon-notificacao.png') }}"
+          alt="Ícone de Notificação"
+        />
+        <img src="{{ url_for('static', filename='img/icones/icon-lista.png') }}" alt="Ícone de Menu" />
+      </div>
+    </header>
+
+    <main class="principal">
+      <section class="estoque">
+        <h2 class="estoque__titulo">Controle do Estoque</h2>
+
+        <div class="formulario">
+          
+          <form action="/adicionaritem" method="POST">
+            <h3>Adicionar Itens</h3>
+            <input type="text" id="input-nome" name="nome" placeholder="Nome do produto" required />
+            <input type="number" id="input-quantidade" name="quantidade" placeholder="Quantidade de produtos" required />
+            <input type="text" id="input-preco" name="preco_unitario" placeholder="Preço do produto por unidade" required />
+            <select name="secao" required>
+              <option value="" disabled selected>Seção</option>
+              <option value="Oficina">Oficina</option>
+              <option value="Loja">Loja</option>
+              <option value="Estoque">Estoque</option>
+            </select>
+            <button class="botao-adicionar" type="submit">Adicionar</button>
+          </form>
+        </div>
+
+        <div class="lista-produtos">
+          <div class="lista-produtos__topo">
+            <h3>Lista de Produtos</h3>
+            <input
+              type="text"
+              placeholder="Pesquisar"
+              class="input-pesquisar"
+            />
+          </div>
+
+          <div class="tabela-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Quantidade</th>
+                    <th>Preço Un.</th>
+                    <th>Preço total</th>
+                    <th>Seção</th>
+                    <th>Ações</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <nav>
+        <ul>
+          <li>
+            <img
+              src="{{ url_for('static', filename='img/menu/menu-adicionaritem-on.png') }}"
+              alt="ícone de caixa"
+            />
+          </li>
+          <li>
+            <img src="{{ url_for('static', filename='img/menu/menu-resumo-off.png') }}" alt="Ícone casa" />
+          </li>
+          <li>
+            <img
+              src="{{ url_for('static', filename='img/menu/menu-estoque-off.png') }}"
+              alt="Ícone de Gráfico"
+            />
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/sistema-coletor/adicionarItem.js') }}"></script>
+  </body>
+</html>
